@@ -22,7 +22,6 @@ function calculateBudget(event) {
 
   //calculate budget: budget = income - savings - expenses
   function calculateBudget(income, savings, expenses) {
-      console.log('calculating budget!')
     var incomeTotal = calculateTotals(income);
     var savingsTotal = calculateTotals(savings);
     var expensesTotal = calculateTotals(expenses);

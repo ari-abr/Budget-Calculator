@@ -68,8 +68,6 @@ var budgetController = (function () {
       //add new item to the array and return it
       data.allItems[type].push(newItem);
 
-      console.log(newItem);
-
       return newItem;
 
     },
@@ -110,15 +108,12 @@ var budgetController = (function () {
       data.allItems.exp.forEach(function(cur) {
         cur.calcPercentage(data.totals.inc);
       });
-      console.log(data.allItems.exp);
     },
 
     getPercentages: function() {
       var allPerc = data.allItems.exp.map(function(cur) {
-        console.log(cur.getPercentage);
         return cur.getPercentage();
       });
-      console.log(allPerc);
       return allPerc;
     },
 
@@ -129,10 +124,6 @@ var budgetController = (function () {
         totalExp: data.totals.exp,
         percentage: data.percentage,
       };
-    },
-
-    testing: function () {
-      console.log(data);
     }
   };
 })();
@@ -367,7 +358,6 @@ var controller = (function (budgetCtrl, UICtrl) {
   //function to start everything in the app
   return {
     init: function () {
-      console.log('app started');
       UICtrl.displayMonth();
       UICtrl.displayBudget({
         budget: 0,
