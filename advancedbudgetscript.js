@@ -1,10 +1,12 @@
-//UI Controller
+//add listener to the form button
 const submitButton = document.querySelector('.calcBtn');
 submitButton.addEventListener('click', calculateBudget);
 
+//main function
 function calculateBudget(event) {
   event.preventDefault();
 
+  //add up numbers: savings1 + savings2 + savings3
   function calculateTotals(htmlItem) {
     var budgetVar = 0;
 
@@ -18,6 +20,7 @@ function calculateBudget(event) {
     return budgetVar;
   }
 
+  //calculate budget: budget = income - savings - expenses
   function calculateBudget(income, savings, expenses) {
       console.log('calculating budget!')
     var incomeTotal = calculateTotals(income);
@@ -27,6 +30,7 @@ function calculateBudget(event) {
     return incomeTotal - savingsTotal - expensesTotal;
   }
 
+  //set up variables for easier calculations
   var monthSav, monthExp, monthBudget, annualSav, annualExp, annualBudget = 0;
   monthSav = calculateTotals('.monthly-savings');
   monthExp = calculateTotals('.monthly-expenses');
@@ -35,6 +39,7 @@ function calculateBudget(event) {
   annualExp = monthExp * 12 + calculateTotals('.annual-expenses');
   annualBudget = calculateTotals('.monthly-incomes') * 12 - annualSav - annualExp;
 
+  //display numbers on the web page
   document.querySelector('.total-monthly-savings').value = monthSav;
   document.querySelector('.total-monthly-expenses').value = monthExp;
   document.querySelector('.total-monthly-budget').value = monthBudget;
