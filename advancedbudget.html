@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Budgety</title>
+    </head>
+    <body>
+      <nav class="nav-custom navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="custom-nav-item nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="custom-nav-item nav-item">
+              <a class="nav-link" href="">|</a>
+            </li>
+            <li class="custom-nav-item nav-item">
+              <a class="nav-link" href="quickbudget.html">Quick Budget Calculator</a>
+            </li>
+            <li class="custom-nav-item nav-item">
+              <a class="nav-link" href="">|</a>
+            </li>
+            <li class="custom-nav-item nav-item">
+                <a class="nav-link" href="advancedbudget.html">Advanced Budget Calculator</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+        
+        <div class="top">
+          <img class="logo" src="website_logo_white.png"></img>
+        </div>
+        <h2 class="body-paragraph"><u>Advanced Budget</u></h2>
+        <p class="body-paragraph">Fill out the form as accurately as possible:</p>
+
+        <form class="budget-form">
+          <div class="savings">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-12 col-form-label form-group-label">Monthly Savings</label>
+              </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Emergency Fund</label>
+                <div class="col-sm-4">
+                  <input type="number" class="form-control monthly-savings" id="monthly-savings-1" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label ">Investments</label>
+                <div class="col-sm-4">
+                  <input type="number" class="form-control monthly-savings" id="monthly-savings-2" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Retirement Savings</label>
+                <div class="col-sm-4">
+                  <input type="number" class="form-control monthly-savings" id="monthly-savings-3" placeholder="$$$">
+                </div>
+              </div>
+            </div>
+
+            <div class="expenses">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-12 col-form-label form-group-label">Monthly Expenses</label>
+              </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Food</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Transportation</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Health</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Clothing</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Family and Pet Care</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Household, Rent, and Utilities</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Loans</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Entertainment, Luxuries, and Personal</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Other Monthly Expenses</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+            </div>
+
+              <div class="savings">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label form-group-label">Monthly Income</label>
+              </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Primary Income</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-incomes" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Other Sources of Income</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control monthly-incomes" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+            </div>
+
+            <div class="expenses">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label form-group-label">Annual Expenses</label>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Tuition</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control annual-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Taxes</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control annual-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Vacations and Events</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control annual-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Fees and Insurances</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control annual-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Other Annual Expenses</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control annual-expenses" id="inputEmail3" placeholder="$$$">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="calculations">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label form-group-label">Budget Calculations</label>
+              </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Monthly Savings</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-monthly-savings" id="total-monthly-savings" placeholder="$$$" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Monthly Expenses</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-monthly-expenses" id="inputEmail3" placeholder="$$$" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Monthly Budget</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-monthly-budget" id="inputEmail3" placeholder="$$$" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Annual Savings</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-annual-savings" id="inputEmail3" placeholder="$$$" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Annual Expenses</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-annual-expenses" id="inputEmail3" placeholder="$$$" readonly>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Annual Budget</label>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control total-annual-budget" id="inputEmail3" placeholder="$$$" readonly>
+                </div>
+              </div>
+
+
+
+              <div class="form-group row">
+                <div class="col-sm-4">
+                  <button type="submit" class="custom-form-btn btn btn-primary calcBtn" id="calcBtn">Calculate</button>
+                </div>
+              </div>
+          </form>
+        </div>
+        
+        <script src="advancedbudgetscript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

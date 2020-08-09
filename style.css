@@ -1,0 +1,104 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-custom{
+    background-color: #1d251c;
+    color: rgb(239, 252, 238);
+}
+.custom-nav-item{
+    margin-left: 2rem;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+    background-color: #f7f7f7;
+    margin-bottom: 15%;
+}
+h2{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.budget-form{
+    margin-bottom: 15%;
+}
+.body-paragraph{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.logo{
+    position: absolute;
+    top: 0.25%;
+    left: 7%;
+    width: 30%;
+    height: auto;
+}
+.budget-form{
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+.form-group-label{
+    font-weight: 900;
+    color: black;
+    text-decoration: black;
+}
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(moneyBackground.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.title{
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    font-weight: 800;
+    top: 25%;
+    left: 25%;
+    font-size: 72px;
+}
+.welcome{
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    font-weight: 300;
+    top: 75%;
+    left: 25%;
+    font-weight: 500;  
+}
+.savings, .expenses, .calculations{
+    border-top-style: solid;
+    border-width: 7px;
+}
+.savings{
+    border-color: #28B9B5;
+}
+.expenses{
+    border-color: #ff4f49;
+}
+.calculations{
+    border-color: #797979;
+}
+.custom-form-btn{
+    background-color: #4b9c52;
+    border-style: none;
+}
+.custom-form-btn:hover{
+    background-color: #2f4731;
+}
